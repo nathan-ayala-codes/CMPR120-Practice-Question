@@ -27,6 +27,7 @@ int main()
     i.e. error checks, error messages, accurate 
     variable names, etc.
     */
+   //added comment 
 
    int age;
    std::string dayOfWeek;
