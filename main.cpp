@@ -27,8 +27,6 @@ int main()
     i.e. error checks, error messages, accurate 
     variable names, etc.
     */
-   //added comment 
-
    int age;
    std::string dayOfWeek;
 
@@ -40,12 +38,12 @@ int main()
     if(age < 0)
     {
         std::cout << "Error: Age cannot be less than 0" << std::endl;
-        return;
+        return -1;
     }
     if (dayOfWeek != "Monday" && dayOfWeek != "Tuesday" && dayOfWeek != "Wednesday" && dayOfWeek != "Thursday" && dayOfWeek != "Friday" && dayOfWeek != "Saturday" && dayOfWeek != "Sunday")
     {
         std::cout << "Error: Invalid date" << std::endl;
-        return;
+        return -1;
     }
 
     if(age <= 12)
@@ -65,10 +63,6 @@ int main()
         else if (dayOfWeek == "Monday" || dayOfWeek == "Tuesday" || dayOfWeek == "Wednesday" || dayOfWeek == "Thursday")
         {
             std::cout << "Your ticket costs: $12.00" << std::endl;
-        }
-        else
-        {
-            std::cout << "Error invalid day of week entered!" << std::endl;
         }
    }
 
